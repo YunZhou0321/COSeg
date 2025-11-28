@@ -9,6 +9,7 @@ arXiv: https://arxiv.org/abs/2511.19426
 - [ ] Update the paper
 
 ## ⚙️ Installation
+```bash
 conda env create -f environments/default.yml
 conda activate ref-sam3d
 
@@ -50,6 +51,7 @@ cd sam3
 pip install -e .
 pip install -e ".[notebooks]"
 
+```
 ## 📌 Getting Started
 ### Setup vLLM server 
 This step is only required if you are using a model served by vLLM, skip this step if you are calling LLM using an API like Gemini and GPT.
@@ -61,3 +63,6 @@ This step is only required if you are using a model served by vLLM, skip this st
     vllm serve Qwen/Qwen3-VL-4B-Instruct-FP8 --tensor-parallel-size 2 --allowed-local-media-path / --enforce-eager --port 8001
 
 ### Run inference code
+
+
+
